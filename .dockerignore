@@ -1,0 +1,4 @@
+node_modules
+server/frontend/node_modules
+server/database/node_modules
+server/djangoenv
