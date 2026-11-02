@@ -1,3 +1,4 @@
+import os
 """
 Django settings for djangoproj project.
 
@@ -10,7 +11,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os
 from pathlib import Path
 
 
@@ -28,7 +28,7 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = []
 
 REST_FRAMEWORK = {
@@ -136,3 +136,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = []
 
+
+TEMPLATES[0]['DIRS'] = [
+    os.path.join(BASE_DIR, 'frontend/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
+]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend/static'),
+    os.path.join(BASE_DIR, 'frontend/build'),
+    os.path.join(BASE_DIR, 'frontend/build/static'),
+]

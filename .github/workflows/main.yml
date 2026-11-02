@@ -1,0 +1,44 @@
+name: 'Lint Code'
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint_python:
+    name: Lint Python files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Run flake8
+        run: flake8 server --exclude=migrations,frontend,database --max-line-length=100 --count --show-source --statistics
+
+  lint_js:
+    name: Lint JavaScript files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install JSHint
+        run: npm install jshint --global
+
+      - name: Run JSHint
+        run: jshint server/database/app.js server/database/review.js server/database/dealership.js

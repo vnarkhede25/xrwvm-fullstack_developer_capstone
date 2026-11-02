@@ -1,2 +1,104 @@
 Watching for file changes with StatReloader
-Error: That port is already in use.
+[02/Nov/2026 09:04:59] "GET / HTTP/1.1" 200 2679
+[02/Nov/2026 09:04:59] "GET /static/style.css HTTP/1.1" 200 1918
+[02/Nov/2026 09:04:59] "GET /static/bootstrap.min.css HTTP/1.1" 200 155800
+[02/Nov/2026 09:04:59] "GET /static/car_dealership.jpg HTTP/1.1" 200 263696
+[02/Nov/2026 09:05:04] "GET /dealers/ HTTP/1.1" 200 652
+[02/Nov/2026 09:05:04] "GET /static/css/main.d9716fdc.css HTTP/1.1" 200 157408
+[02/Nov/2026 09:05:04] "GET /static/js/main.419cc502.js HTTP/1.1" 200 166663
+[02/Nov/2026 09:05:06] "GET /djangoapp/get_dealers HTTP/1.1" 200 12500
+[02/Nov/2026 09:06:48] "GET /dealers/ HTTP/1.1" 200 652
+[02/Nov/2026 09:06:48] "GET /static/css/main.d9716fdc.css HTTP/1.1" 304 0
+[02/Nov/2026 09:06:48] "GET /static/js/main.419cc502.js HTTP/1.1" 304 0
+[02/Nov/2026 09:06:49] "GET /djangoapp/get_dealers HTTP/1.1" 200 12500
+[02/Nov/2026 09:06:58] "GET /login/ HTTP/1.1" 200 652
+[02/Nov/2026 09:07:29] "POST /djangoapp/login HTTP/1.1" 200 60
+[02/Nov/2026 09:07:29] "GET / HTTP/1.1" 200 2679
+[02/Nov/2026 09:08:36] "GET /dealers/ HTTP/1.1" 200 652
+[02/Nov/2026 09:08:37] "GET /static/js/main.419cc502.js HTTP/1.1" 304 0
+[02/Nov/2026 09:08:37] "GET /static/css/main.d9716fdc.css HTTP/1.1" 304 0
+[02/Nov/2026 09:08:37] "GET /djangoapp/get_dealers HTTP/1.1" 200 12500
+[02/Nov/2026 09:10:36] "GET /djangoapp/get_dealers/Kansas HTTP/1.1" 200 271
+Not Found: /dealers/15
+[02/Nov/2026 09:12:19] "GET /dealers/15 HTTP/1.1" 404 3773
+[02/Nov/2026 09:14:06] "GET /dealer/15 HTTP/1.1" 200 652
+[02/Nov/2026 09:14:07] "GET /static/css/main.d9716fdc.css HTTP/1.1" 304 0
+[02/Nov/2026 09:14:07] "GET /static/js/main.419cc502.js HTTP/1.1" 304 0
+[02/Nov/2026 09:14:07] "GET /static/media/reviewbutton.d450bab8bc6468d9fb28.png HTTP/1.1" 200 62137
+[02/Nov/2026 09:14:07] "GET /djangoapp/dealer/15 HTTP/1.1" 200 278
+[02/Nov/2026 09:14:19] "GET /djangoapp/reviews/dealer/15 HTTP/1.1" 200 865
+[02/Nov/2026 09:14:19] "GET /static/media/neutral.84adb1c83d738945f381.png HTTP/1.1" 200 29329
+[02/Nov/2026 09:14:19] "GET /static/media/positive.4aa3d05c6e13ba380a17.png HTTP/1.1" 200 34037
+[02/Nov/2026 09:15:15] "GET /postreview/15 HTTP/1.1" 200 652
+[02/Nov/2026 09:15:16] "GET /static/js/main.419cc502.js HTTP/1.1" 304 0
+[02/Nov/2026 09:15:16] "GET /static/css/main.d9716fdc.css HTTP/1.1" 304 0
+[02/Nov/2026 09:15:16] "GET /djangoapp/dealer/15 HTTP/1.1" 200 278
+[02/Nov/2026 09:15:16] "GET /djangoapp/get_cars HTTP/1.1" 200 486
+[02/Nov/2026 09:17:33] "POST /djangoapp/add_review HTTP/1.1" 200 15
+[02/Nov/2026 09:17:34] "GET /dealer/15 HTTP/1.1" 200 652
+[02/Nov/2026 09:17:34] "GET /static/js/main.419cc502.js HTTP/1.1" 304 0
+[02/Nov/2026 09:17:34] "GET /static/css/main.d9716fdc.css HTTP/1.1" 304 0
+[02/Nov/2026 09:17:35] "GET /static/media/reviewbutton.d450bab8bc6468d9fb28.png HTTP/1.1" 304 0
+[02/Nov/2026 09:17:35] "GET /djangoapp/dealer/15 HTTP/1.1" 200 278
+[02/Nov/2026 09:17:45] "GET /djangoapp/reviews/dealer/15 HTTP/1.1" 200 1130
+[02/Nov/2026 09:17:45] "GET /static/media/neutral.84adb1c83d738945f381.png HTTP/1.1" 304 0
+[02/Nov/2026 09:17:45] "GET /static/media/positive.4aa3d05c6e13ba380a17.png HTTP/1.1" 304 0
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 02, 2026 - 09:04:07
+Django version 5.2.18, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+GET from http://localhost:3030/fetchDealers? 
+GET from http://localhost:3030/fetchDealers? 
+GET from http://localhost:3030/fetchDealers? 
+GET from http://localhost:3030/fetchDealers/Kansas? 
+GET from http://localhost:3030/fetchDealer/15? 
+GET from http://localhost:3030/fetchReviews/dealer/15? 
+GET from http://localhost:3030/fetchDealer/15? 
+{'id': 51, 'name': 'vaishnaviNarkhede', 'dealership': 15, 'review': 'good product', 'purchase': True, 'purchase_date': '2026-10-27', 'car_make': 'Ford', 'car_model': 'Escape', 'car_year': 2026, '_id': '6ae8552d5a206617fcaf600c', '__v': 0}
+GET from http://localhost:3030/fetchDealer/15? 
+GET from http://localhost:3030/fetchReviews/dealer/15? 
+Watching for file changes with StatReloader
+/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 02, 2026 - 09:23:31
+Django version 5.2.18, using settings 'djangoproj.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Traceback (most recent call last):
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/manage.py", line 22, in <module>
+    main()
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/home/theia/.local/lib/python3.10/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+  File "/home/theia/.local/lib/python3.10/site-packages/django/core/management/__init__.py", line 382, in execute
+    settings.INSTALLED_APPS
+  File "/home/theia/.local/lib/python3.10/site-packages/django/conf/__init__.py", line 81, in __getattr__
+    self._setup(name)
+  File "/home/theia/.local/lib/python3.10/site-packages/django/conf/__init__.py", line 68, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/theia/.local/lib/python3.10/site-packages/django/conf/__init__.py", line 166, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/project/xrwvm-fullstack_developer_capstone/server/djangoproj/settings.py", line 127, in <module>
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+NameError: name 'os' is not defined
